@@ -20,7 +20,7 @@
                   <h4>General</h4>
                   <ul class="list-unstyled components">
                      <li class="active">
-                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                        <a href="/"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
                        
                      </li>
                     
