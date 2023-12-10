@@ -30,17 +30,15 @@
                     
                    
                      <li class="active">
-                        <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Additional Pages</span></a>
+                        <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Car Reapir Service</span></a>
                         <ul class="collapse list-unstyled" id="additional_page">
                            <li>
-                              <a href="profile.html">> <span>Profile</span></a>
+                              <a href="/service">> <span>Add Service</span></a>
                            </li>
                            <li>
-                              <a href="project.html">> <span>Projects</span></a>
+                              <a href="/service_create">> <span>Insert Service</span></a>
                            </li>
-                           <li>
-                              <a href="login.html">> <span>Login</span></a>
-                           </li>
+                          
                            <li>
                               <a href="404_error.html">> <span>404 Error</span></a>
                            </li>

@@ -1,0 +1,90 @@
+CRITICAL - 2023-12-09 09:20:21 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(11): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:04:59 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:06:23 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:06:23 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:06:23 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:06:31 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:07:23 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:08:12 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
+CRITICAL - 2023-12-09 12:10:29 --> Invalid file: "service/create.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('service/create.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('service/create', [], true)
+ 3 APPPATH\Controllers\ServiceController.php(14): view('service/create')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ServiceController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServiceController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xamp\\htdocs\\wdpf55_codegitore\\Car_Repair_Admin_template\\public\\index.php')
