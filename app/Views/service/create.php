@@ -13,7 +13,11 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- site icon -->
-      <link rel="icon" href="<?php echo site_url('assets/images/fevicon.png') ?>" type="image/png" />
+      <link rel="icon" href="<?php
+
+use Kint\Zval\Value;
+
+ echo site_url('assets/images/fevicon.png') ?>" type="image/png" />
       <!-- bootstrap css -->
       <link rel="stylesheet" href="<?php echo site_url('assets/css/bootstrap.min.css') ?>" />
       <!-- site css -->
@@ -163,6 +167,45 @@
                               </div>
                            </div>
                         </div>
+                         <div class="full_container">
+         <div class="container">
+            <div class="center verticle_center full_height">
+               <div class="login_section">
+                  <div >
+                     <div class="center">
+                        <img width="210" src="../assets/images/logo/pexels-cottonbro-studio-4489718.jpg" alt="" style="width:690px;" height="200px" />
+                     </div>
+                  </div>
+                  <div class="login_form">
+                     <form method="post" action="/service/store" enctype="multipart/form-data">
+                        <fieldset>
+                           <div class="field">
+                              <label class="label_field">Service Name</label>
+                              <input type="text" name="service" placeholder="Enter your Service"  />
+                           </div>
+                           <div class="field">
+                              <label class="label_field">Description</label>
+                              <input type="text" name="description" placeholder="Description"  />
+                           </div>
+                           <div class="field">
+                              <label class="label_field" >Sevice Price</label>
+                              <input type ="number" name="price" placeholder="Enter your Service Price" />
+                           </div>
+                           <div class="field">
+                              <label class="label_field"> Post Date</label>
+                              <input type="date" name="date" placeholder=" Service Post date" />
+                           </div>
+                           <div class="field margin_0">
+                              <label class="label_field hidden">hidden label</label>
+                              <button class="btn btn-success w-100" type="submit">SUBMIT</button>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
                         
                        
                         <!-- table section -->

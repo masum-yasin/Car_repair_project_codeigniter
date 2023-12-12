@@ -13,7 +13,11 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- site icon -->
-      <link rel="icon" href="<?php echo site_url('assets/images/fevicon.png') ?>" type="image/png" />
+      <link rel="icon" href="<?php
+
+use Kint\Zval\Value;
+
+ echo site_url('assets/images/fevicon.png') ?>" type="image/png" />
       <!-- bootstrap css -->
       <link rel="stylesheet" href="<?php echo site_url('assets/css/bootstrap.min.css') ?>" />
       <!-- site css -->
@@ -153,99 +157,65 @@
                      <!-- chart ending -->
                     
                      <!-- row -->
-                     <?php if (session()->getFlashdata('msg')) : ?>
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    <?php echo session()->getFlashdata('msg'); ?>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                            <?php endif; ?>
-                        
                      <div class="row">
                         
-                     
                         <div class="col-md-12">
                            <div class="white_shd full margin_bottom_30">
                              
                               <div class="table_section padding_infor_info">
-                                 <div class="table-responsive-sm">
-                                    <table class="table table-hover table-dark">
-                                       <thead>
-                                          <tr>
-                                             <th>ID</th>
-                                             <th>Service</th>
-                                             <th>Description</th>
-                                             <th>Status</th>
-                                             <th>Date_Create</th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <?php 
-                                          $n = 0;
-                                          foreach($services as  $service): ?>
-                                          <tr>
-                                             <td><?= $n+1; ?></td>
-                                             <td><?= $service['service']; ?></td>
-                                             <td><?= $service['description']; ?></td>
-                                             <td><?= $service['status'] ;?></td>
-                                             <td><?= $service['date_created'] ?></td>
-                                             <td class="d-flex justify-content-between">
-                                               <a href="<?php echo base_url("service/delete".$service['id']); ?>"><i class="btn btn-danger" onclick="return confirm('Data will be delete Permanently..!!!')">Delete</i></a> 
-                                             <a href="<?php echo base_url('service/edit/'.$service['id']); ?>"> <i class="btn btn-warning"> Edit </i>  </a></td>
-                                            
-                                          </tr>
-                                          <?php $n++; endforeach;  ?>
-                                          
-                                          
-                                       </tbody>
-                                    </table>
-                                 </div>
+                                
                               </div>
                            </div>
                         </div>
+                         <div class="full_container">
+         <div class="container">
+            <div class="center verticle_center full_height">
+               <div class="login_section">
+                  <div >
+                     <div class="center">
+                        <img width="210" src="/assets/images/logo/pexels-cottonbro-studio-4489718.jpg" alt="" style="width:690px;" height="200px" />
+                     </div>
+                  </div>
+                  <?php if (session()->getFlashdata('msg')) : ?>
+                                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                    <?php echo session()->getFlashdata('msg'); ?>
+                                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+                                            <?php endif; ?>
+                  <div class="login_form">
+                     <form  method="post" action="<?= site_url('/service/update'.$id) ?>" enctype="multipart/form-data">
+                        <fieldset>
+                           <div class="field">
+                              <label class="label_field">Service Name</label>
+                              <input type="text" name="service" placeholder="Enter your Service"  value="<?= $service ?>" />
+                           </div>
+                           <div class="field">
+                              <label class="label_field">Description</label>
+                              <input type="text" name="description" placeholder="Description" value="<?= $description ?>" />
+                           </div>
+                           <div class="field">
+                              <label class="label_field" >Sevice Price</label>
+                              <input type ="number" name="price" placeholder="Enter your Service Price" value="<?= $price?>" />
+                           </div>
+                           <div class="field">
+                              <label class="label_field"> Post Date</label>
+                              <input type="date" name="date" placeholder=" Service Post date" value="<?= $date_created ?>"/>
+                           </div>
+                           <div class="field margin_0">
+                              <label class="label_field hidden">hidden label</label>
+                              <button class="btn btn-success w-100" type="submit">SUBMIT</button>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
                         
                        
                         <!-- table section -->
-                        <div class="col-md-12">
-                           <div class="white_shd full margin_bottom_30">
-                             
-                              <div class="table_section padding_infor_info">
-                                 <div class="table-responsive-sm">
-                                    <table class="table">
-                                       <thead>
-                                          <tr>
-                                             <th>#</th>
-                                             <th>Firstname</th>
-                                             <th>Lastname</th>
-                                             <th>Age</th>
-                                             <th>City</th>
-                                             <th>Country</th>
-                                             <th>Sex</th>
-                                             <th>Example</th>
-                                             <th>Example</th>
-                                             <th>Example</th>
-                                             <th>Example</th>
-                                          </tr>
-                                       </thead>
-                                       <tbody>
-                                          <tr>
-                                             <td>1</td>
-                                             <td>Anna</td>
-                                             <td>Pitt</td>
-                                             <td>35</td>
-                                             <td>New York</td>
-                                             <td>USA</td>
-                                             <td>Female</td>
-                                             <td>Yes</td>
-                                             <td>Yes</td>
-                                             <td>Yes</td>
-                                             <td>Yes</td>
-                                          </tr>
-                                       </tbody>
-                                    </table>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                        
                      </div>
                   </div>
                   <!-- footer -->

@@ -33,10 +33,10 @@
                         <a href="#additional_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Car Reapir Service</span></a>
                         <ul class="collapse list-unstyled" id="additional_page">
                            <li>
-                              <a href="/service">> <span>Add Service</span></a>
+                              <a href="/service">> <span>Service List</span></a>
                            </li>
                            <li>
-                              <a href="/service_create">> <span>Insert Service</span></a>
+                              <a href="/service/create">> <span> Add Service</span></a>
                            </li>
                           
                            <li>
