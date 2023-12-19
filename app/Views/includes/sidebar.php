@@ -8,7 +8,7 @@
                   <div class="sidebar_user_info">
                      <div class="icon_setting"></div>
                      <div class="user_profle_side">
-                        <div class="user_img"><img class="img-responsive" src="assets/images/layout_img/user_img.jpg" alt="#" /></div>
+                        <div class="user_img"><img class="img-responsive" src="assets/images/logo/car_log.jpg" alt="#" width="500px" /></div>
                         <div class="user_info">
                            <h6>Motor Zone</h6>
                            <p><span class="online_animation"></span> Online</p>
@@ -39,9 +39,18 @@
                               <a href="/service/create">> <span> Add Service</span></a>
                            </li>
                           
+                        </ul>
+                     </li>
+                     <li class="active">
+                        <a href="#machanist_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Car Reapir Machanist</span></a>
+                        <ul class="collapse list-unstyled" id="machanist_page">
                            <li>
-                              <a href="404_error.html">> <span>404 Error</span></a>
+                              <a href="/machanist">> <span>Machanist List</span></a>
                            </li>
+                           <li>
+                              <a href="/machanist/create">> <span> Add Machanist</span></a>
+                           </li>
+                          
                         </ul>
                      </li>
                      

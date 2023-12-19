@@ -184,12 +184,14 @@
                                           foreach($services as  $service): ?>
                                           <tr>
                                              <td><?= $n+1; ?></td>
+                                             <td><img src="<?php echo base_url('/assets/uploads/'.$service['image'])?>" width="50px" height="50px" alt=""></td>
                                              <td><?= $service['service']; ?></td>
                                              <td><?= $service['description']; ?></td>
                                              <td><?= $service['status'] ;?></td>
                                              <td><?= $service['date_created'] ?></td>
+                                            
                                              <td class="d-flex justify-content-between">
-                                               <a href="<?php echo base_url("service/delete".$service['id']); ?>"><i class="btn btn-danger" onclick="return confirm('Data will be delete Permanently..!!!')">Delete</i></a> 
+                                               <a href="<?php echo base_url("/service/delete/".$service['id']); ?>"><i class="btn btn-danger" onclick="return confirm('Data will be delete Permanently..!!!')">Delete</i></a> 
                                              <a href="<?php echo base_url('service/edit/'.$service['id']); ?>"> <i class="btn btn-warning"> Edit </i>  </a></td>
                                             
                                           </tr>

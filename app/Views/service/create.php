@@ -195,6 +195,10 @@ use Kint\Zval\Value;
                               <label class="label_field"> Post Date</label>
                               <input type="date" name="date" placeholder=" Service Post date" />
                            </div>
+                           <div class="field">
+                              <label class="label_field">UPLOAD IMAGE</label>
+                              <input type="file" name="img" placeholder="UPLOAD IMAGE" />
+                           </div>
                            <div class="field margin_0">
                               <label class="label_field hidden">hidden label</label>
                               <button class="btn btn-success w-100" type="submit">SUBMIT</button>

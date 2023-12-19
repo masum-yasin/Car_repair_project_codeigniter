@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ServiceModel extends Model
+class MechanistModel extends Model
 {
-    protected $table            = 'service_list';
+    protected $table            = 'mechanics_list';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
-    protected $allowedFields    = ['service','status', 'price','description','date_created','image'];
+    protected $useSoftDeletes   = false;                   
+     protected $protectFields    = true;
+    protected $allowedFields    = ['name','contact','email',' Joining_Date','image'];
 
     // Dates
     protected $useTimestamps = false;
@@ -38,3 +38,4 @@ class ServiceModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 }
+
