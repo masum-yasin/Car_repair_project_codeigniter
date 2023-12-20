@@ -172,6 +172,7 @@
                                        <thead>
                                           <tr>
                                              <th>ID</th>
+                                             <th>Image</th>
                                              <th>Service</th>
                                              <th>Description</th>
                                              <th>Status</th>

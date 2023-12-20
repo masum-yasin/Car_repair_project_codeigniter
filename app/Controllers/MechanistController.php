@@ -19,7 +19,7 @@ class MechanistController extends BaseController
 
     public function index()
     {
-        $data['machanists'] = $this->mechanist->findAll();
+        $data['mechanists'] = $this->mechanist->findAll();
         return view('machanistlist/machanist_table',$data);
     }
     public function create(){
@@ -60,7 +60,28 @@ class MechanistController extends BaseController
     // Mechanist Edit start here//
     public function edit($id){
         $data = $this->mechanist->find($id);
-        return view('mechanist/edit');
+        return view('machanistlist/machanistlist_edit',$data);
+    }
+    public function update($id){
+        // $imgstore = $this->request->getFile('image');
+        // $imgName = $imgstore->getName();
+        $data = [
+            'name'=> $this->request->getVar('mechanist'),
+            'contact'=>$this->request->getVar('contact'),
+            'email' =>$this->request->getVar('email'),
+            'Joining_Date' =>$this->request->getVar('data'),
+            // 'image' =>$imgName,
+
+        ];
+        $this->mechanist->update($id,$data);
+        $session = session();
+        $session->getFlashdata('msg','update Successfully');
+        $this->response->redirect('/machanist');
+    }
+    public function delete($id){
+        $this->mechanist->where('id',$id);
+        $this->mechanist->delete();
+        $this->response->redirect('/machanist');
     }
     
 }
