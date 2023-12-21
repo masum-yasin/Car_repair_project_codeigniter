@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2023 at 02:10 PM
+-- Generation Time: Dec 21, 2023 at 02:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -47,6 +47,33 @@ INSERT INTO `categories` (`id`, `category`, `status`, `date_created`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `customers`
+--
+
+CREATE TABLE `customers` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone_Number` int(11) NOT NULL,
+  `address` varchar(500) DEFAULT NULL,
+  `state` varchar(50) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `details` varchar(300) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `customers`
+--
+
+INSERT INTO `customers` (`id`, `name`, `email`, `phone_Number`, `address`, `state`, `created_at`, `details`) VALUES
+(1, 'khayrul Alam Rayan', 'rayan@gmail.com', 0, '', 'Dhaka', '2023-12-27 08:36:07', 'Pellentesque bibendum nunc eget pharetra posuere. Sed fermentum eros at aliquet accumsan. Nullam ut leo massa. Mauris est odio, elementum eu accumsan nec, cursus quis nunc.'),
+(2, 'khayrul Alam Rayan', 'rayan@gmail.com', 12365874, NULL, 'ssjkpojs;', '2024-01-02 18:00:00', NULL),
+(3, 'khayrul Alam Rayan', 'abc@gmail.com', 1963202587, NULL, 'dddddddddddd', '2023-12-20 18:00:00', NULL),
+(4, 'khayrul Alam Rayan', 'rayan@gmail.com', 215478, NULL, 'dddddd', '2023-12-20 18:00:00', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `mechanics_list`
 --
 
@@ -56,16 +83,18 @@ CREATE TABLE `mechanics_list` (
   `contact` varchar(50) NOT NULL,
   `email` varchar(150) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 1,
-  `date_created` datetime NOT NULL DEFAULT current_timestamp()
+  `Joining_Date` datetime NOT NULL DEFAULT current_timestamp(),
+  `image` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `mechanics_list`
 --
 
-INSERT INTO `mechanics_list` (`id`, `name`, `contact`, `email`, `status`, `date_created`) VALUES
-(1, 'John Smith', '09123456789', 'jsmith@sample.com', 1, '2021-09-30 10:26:11'),
-(2, 'George Wilson', '09112355799', 'gwilson@gmail.com', 1, '2021-09-30 10:30:58');
+INSERT INTO `mechanics_list` (`id`, `name`, `contact`, `email`, `status`, `Joining_Date`, `image`) VALUES
+(1, '', '09123456789', 'jsmith@sample.com', 1, '2021-09-30 10:26:11', ''),
+(6, 'Rayan Alam', '0192036251', 'mamun@gmail.com', 1, '2023-12-20 15:12:03', 'msg4.png'),
+(7, 'Kutta Sadid', '01236925145', 'fgk@gmail.com', 1, '2023-12-20 16:08:25', 'g2.jpg');
 
 -- --------------------------------------------------------
 
@@ -105,24 +134,20 @@ CREATE TABLE `service_list` (
   `description` text NOT NULL,
   `price` int(11) NOT NULL,
   `status` tinyint(4) NOT NULL DEFAULT 1,
-  `date_created` datetime NOT NULL DEFAULT current_timestamp()
+  `date_created` datetime NOT NULL DEFAULT current_timestamp(),
+  `image` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `service_list`
 --
 
-INSERT INTO `service_list` (`id`, `service`, `description`, `price`, `status`, `date_created`) VALUES
-(1, 'Change Oil', 'Put simply an oil change is when you take out the motor oil from your engine and put back in new motor oil. During an oil change you also have to change the oil filter and put on a new one', 0, 1, '2021-09-30 14:11:21'),
-(2, 'Overall Checkup', '​A full service of a vehicle typically includes an oil and filter change, a visual inspection of fluid levels and components, a wheel alignment check,', 0, 1, '2021-09-30 14:11:38'),
-(3, 'Engine Tune up', 'Today, engine tune-ups include checking, diagnosing, and replacing bad spark plugs, spark plug wires, distributor caps, fuel filters, air filters, and oil filters. ', 0, 1, '2021-09-30 14:12:03'),
-(4, 'Tire Replacement', 'The load index is essentially the amount of weight that your tire can support. Again, this is a standardized number, so the 102 in our example translates to another weight capacity', 0, 1, '2021-09-30 14:12:24'),
-(5, 'Foam Washing', 'Full fresh of car', 0, 1, '2023-12-14 00:00:00'),
-(6, 'Foam Washing', 'Full fresh of car', 0, 1, '2023-12-14 00:00:00'),
-(7, 'Foam Washing', 'Full fresh of car', 0, 1, '2023-12-08 00:00:00'),
-(8, 'Foam Washing', 'Full fresh of car', 0, 1, '2023-12-22 00:00:00'),
-(9, 'Engine Repair', 'It a carefully washing ', 0, 1, '2023-12-30 00:00:00'),
-(10, '', '', 0, 1, '0000-00-00 00:00:00');
+INSERT INTO `service_list` (`id`, `service`, `description`, `price`, `status`, `date_created`, `image`) VALUES
+(36, 'Foam Washing', 'It a carefully washing ', 123654, 1, '2023-12-19 00:00:00', '1702977401_3c457edc95eb5be99203.png'),
+(37, 'Foam Washing', 'It a carefully washing ', 4582, 1, '2023-12-19 00:00:00', '1702978980_34a60adb3d421e656a76.jpg'),
+(38, 'Foam Washing', 'It a carefully washing ', 123654, 1, '2023-12-30 00:00:00', 'g8.jpg'),
+(39, 'Foam Washing', 'It a carefully washing ', 123654, 1, '2023-12-20 00:00:00', 'g3.jpg'),
+(40, 'Engine Repair', 'It a carefully washing ', 123654, 1, '2023-12-21 00:00:00', 'user_img.jpg');
 
 -- --------------------------------------------------------
 
@@ -177,25 +202,22 @@ INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
 --
 
 CREATE TABLE `users` (
-  `id` int(50) NOT NULL,
-  `firstname` varchar(250) NOT NULL,
-  `lastname` varchar(250) NOT NULL,
-  `username` text NOT NULL,
-  `password` text NOT NULL,
-  `avatar` text DEFAULT NULL,
-  `last_login` datetime DEFAULT NULL,
-  `type` tinyint(1) NOT NULL DEFAULT 0,
-  `date_added` datetime NOT NULL DEFAULT current_timestamp(),
-  `date_updated` datetime DEFAULT NULL ON UPDATE current_timestamp()
+  `us_id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(70) NOT NULL,
+  `password` varchar(300) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `password`, `avatar`, `last_login`, `type`, `date_added`, `date_updated`) VALUES
-(1, 'Adminstrator', 'Admin', 'admin', '0192023a7bbd73250516f069df18b500', 'uploads/1624240500_avatar.png', NULL, 1, '2021-01-20 14:02:37', '2021-06-21 09:55:07'),
-(6, 'Claire', 'Blake', 'cblake', 'cd74fae0a3adf459f73bbf187607ccea', 'uploads/1632990840_ava.jpg', NULL, 2, '2021-09-30 16:34:02', '2021-09-30 16:35:26');
+INSERT INTO `users` (`us_id`, `name`, `email`, `password`, `created_at`) VALUES
+(1, 'khayrul Alam Rayan', 'rayan@gmail.com ', '123456', '2023-12-15 11:00:06'),
+(2, 'masum', 'masum55549@gmail.com', '$2y$10$tF0lMNa3CDqOhzGi7TufFOiUuPO9oSz.NLyjv9AcPa9', '2023-12-20 12:18:09'),
+(3, 'rayan', 'rayan@gmail.com', '$2y$10$BGqtHSg4tcvZxd/sBQb2wOIDuT/XGr0Y/xtEJd/t04r', '2023-12-21 04:43:23'),
+(4, 'mamun', 'mamun@gmail.com', '$2y$10$Pk1EJ7ETj8uGcREIjmAWaemjGG/6n4VGaudMviCZqVWDzfIJBj5Z.', '2023-12-21 06:00:45');
 
 --
 -- Indexes for dumped tables
@@ -205,6 +227,12 @@ INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `password`, `ava
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `customers`
+--
+ALTER TABLE `customers`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -241,7 +269,7 @@ ALTER TABLE `system_info`
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`us_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -254,16 +282,22 @@ ALTER TABLE `categories`
   MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
+-- AUTO_INCREMENT for table `customers`
+--
+ALTER TABLE `customers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `mechanics_list`
 --
 ALTER TABLE `mechanics_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `service_list`
 --
 ALTER TABLE `service_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `service_requests`
@@ -281,7 +315,7 @@ ALTER TABLE `system_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `us_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables

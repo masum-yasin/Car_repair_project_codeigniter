@@ -53,6 +53,18 @@
                           
                         </ul>
                      </li>
+                     <li class="active">
+                        <a href="#customer_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Car Reapir Machanist</span></a>
+                        <ul class="collapse list-unstyled" id="customer_page">
+                           <li>
+                              <a href="/customer">> <span>Customer List</span></a>
+                           </li>
+                           <li>
+                              <a href="/customer/create">> <span> Add Customer</span></a>
+                           </li>
+                          
+                        </ul>
+                     </li>
                      
                   </ul>
                </div>

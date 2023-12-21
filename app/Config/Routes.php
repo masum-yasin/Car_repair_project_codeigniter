@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index',['filter'=>'authGuard']);
 $routes->get('/booking_table', 'BookingController::index');
 $routes->get('/contact_form', 'ContactController::index');
 // service routes start//
@@ -23,10 +23,27 @@ $routes->post('/machanist/store','MechanistController::store');
 $routes->get('/mechanist/delete/(:num)','MechanistController::delete/$1');
 $routes->get('/mechanist/edit/(:num)','MechanistController::edit/$1');
 $routes->post('/mechanist/update/(:num)','MechanistController::update/$1');
+
+
 // Login Authencation System signup and login//
 $routes->get('signup','SignupController::index');
 $routes->match(['get','post'] ,'signup/store', 'SignupController::store');
 $routes->get('/login','LoginController::index');
 $routes->post('/loginuser', 'LoginController::login');
+$routes->get('/signout', 'LoginController::logout');
+
+
+
+// Frontend Data Show//
+$routes->get('serviceall', 'Frontend\ServiceController::index');
+$routes->post('service/(:num)', 'Frontend\ServiceController::show/$1');
+// Customer routes Start//
+$routes->get('/customer','CustomerController::index');
+$routes->get('/customer/create','CustomerController::create');
+$routes->post('/customer/store','CustomerController::store');
+
+
+
+
 
 
