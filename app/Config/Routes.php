@@ -41,6 +41,9 @@ $routes->post('service/(:num)', 'Frontend\ServiceController::show/$1');
 $routes->get('/customer','CustomerController::index');
 $routes->get('/customer/create','CustomerController::create');
 $routes->post('/customer/store','CustomerController::store');
+$routes->get('/customer/edit/(:num)','CustomerController::edit/$1');
+$routes->get('/customer/delete/(:num)','CustomerController::delete/$1');
+$routes->post('/customer/update/(:num)','CustomerController::update/$1');
 
 
 

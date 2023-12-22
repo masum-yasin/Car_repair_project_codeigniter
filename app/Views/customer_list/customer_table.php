@@ -164,10 +164,11 @@
                              
                               <div class="table_section padding_infor_info">
                                  <div class="table-responsive">
-                                    <table class="table table-dark table-striped">
+                                    <table class="table table-dark table-striped w-100">
                                        <thead>
                                           <tr>
-                                             <th>Firstname</th>
+                                          <th>ID</th>
+                                          <th>Firstname</th>
                                              <th>Email</th>
                                              <th>Phone Number</th>
                                              <th>Address</th>
@@ -192,6 +193,10 @@
                                              <td><?= $customer['state']?></td>
                                              <td><?= $customer['created_at'] ?></td>
                                              <td><?= $customer['details'] ?></td>
+                                             <td class="d-flex justify-content-between gap-2">
+                                                <a href="<?php echo base_url("/customer/delete/".$customer['id']) ?>"><i class="btn btn-danger" onclick="return confirm('Data will be Delete permanently!!!')">Delete</i></a>
+                                                <a href="<?php echo base_url('/customer/edit/'.$customer['id']) ?>"><i class="btn btn-warning">Edit</i></a>
+                                             </td>
                                           </tr>
                                           <?php $n++; endforeach ?>
                                        </tbody>

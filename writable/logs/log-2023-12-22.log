@@ -1,0 +1,228 @@
+INFO - 2023-12-22 04:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 04:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 04:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 04:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 14:08:07 --> Maximum execution time of 60 seconds exceeded
+in APPPATH\Config\UserAgents.php on line 253.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-12-22 14:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 14:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 16:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:21:56 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:24:28 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:24:29 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:29:51 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:29:52 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:29:59 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:31:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:31:24 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:31:25 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:32:20 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:32:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:32:23 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:32:33 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 60.
+ 1 APPPATH\Views\customer_list\customer_edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 60, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:33:31 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 59.
+ 1 APPPATH\Views\customer_list\customer_edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:33:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:33:33 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 59.
+ 1 APPPATH\Views\customer_list\customer_edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:35:07 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 59.
+ 1 APPPATH\Views\customer_list\customer_edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:35:39 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 59.
+ 1 APPPATH\Views\customer_list\customer_edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-22 16:35:40 --> Undefined variable: name
+in APPPATH\Views\customer_list\customer_edit.php on line 59.
+ 1 APPPATH\Views\customer_list\customer_edit.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: name', 'E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php', 59, [])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\app\\Views\\customer_list\\customer_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('customer_list/customer_edit', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(59): view('customer_list/customer_edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CustomerController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\xampp\\htdocs\\wdpf55_codeignter\\Car_repair_project_codeigniter\\public\\index.php')
+INFO - 2023-12-22 16:38:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 16:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 16:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:07:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-22 17:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

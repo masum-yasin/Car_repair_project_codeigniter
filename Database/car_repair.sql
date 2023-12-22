@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2023 at 02:08 PM
+-- Generation Time: Dec 22, 2023 at 08:06 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -66,10 +66,9 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `name`, `email`, `phone_Number`, `address`, `state`, `created_at`, `details`) VALUES
-(1, 'khayrul Alam Rayan', 'rayan@gmail.com', 0, '', 'Dhaka', '2023-12-27 08:36:07', 'Pellentesque bibendum nunc eget pharetra posuere. Sed fermentum eros at aliquet accumsan. Nullam ut leo massa. Mauris est odio, elementum eu accumsan nec, cursus quis nunc.'),
+(1, 'khayrul  mizan', 'rayan@gmail.com', 0, NULL, 'Dhaka', '0000-00-00 00:00:00', NULL),
 (2, 'khayrul Alam Rayan', 'rayan@gmail.com', 12365874, NULL, 'ssjkpojs;', '2024-01-02 18:00:00', NULL),
-(3, 'khayrul Alam Rayan', 'abc@gmail.com', 1963202587, NULL, 'dddddddddddd', '2023-12-20 18:00:00', NULL),
-(4, 'khayrul Alam Rayan', 'rayan@gmail.com', 215478, NULL, 'dddddd', '2023-12-20 18:00:00', NULL);
+(3, 'khayrul Alam Rayan', 'abc@gmail.com', 2147483647, NULL, 'dddddddddddd', '0000-00-00 00:00:00', NULL);
 
 -- --------------------------------------------------------
 
@@ -285,7 +284,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `mechanics_list`

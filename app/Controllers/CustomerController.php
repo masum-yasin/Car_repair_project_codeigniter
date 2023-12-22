@@ -10,7 +10,7 @@ use App\Models\CustomerModel;
 class CustomerController extends BaseController
 {
     private $customer;
-    protected $helpers = ['form'];
+    protected $helpers = ['form','url'];
     public function __construct()
     {
       $this->customer = new CustomerModel();  
@@ -53,6 +53,30 @@ class CustomerController extends BaseController
    $this->response->redirect('/customer');
    }
     
+   }
+   public function edit($id){
+    $data = $this->customer->find($id);
+    return view('customer_list/customer_edit',$data);
+   }
+   public function update($id){
+     $data = [
+        'name'=> $this->request->getVar('name'),
+        'email'=> $this->request->getVar('email'),
+        'phone_Number'=> $this->request->getVar('phone'),
+        'address' => $this->request->getVar('address'),
+        'state' =>$this->request->getVar('state'),
+        'created_at'=>$this->request->getVar('date'),
+        'details'  =>$this->request->getVar('subject')
+     ];
+     $this->customer->update($id,$data);
+     $session = session();
+     $session->getFlashdata('msg','Update Successfully');
+     $this->response->redirect('/customer');
+   }
+   public function delete($id){
+    $this->customer->where('id',$id);
+   $this->customer->delete();
+   $this->response->redirect('/customer');
    }
 }
 
