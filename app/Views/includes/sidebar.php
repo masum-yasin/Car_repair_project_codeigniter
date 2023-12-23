@@ -8,7 +8,7 @@
                   <div class="sidebar_user_info">
                      <div class="icon_setting"></div>
                      <div class="user_profle_side">
-                        <div class="user_img"><img class="img-responsive" src="assets/images/logo/car_log.jpg" alt="#" width="500px" /></div>
+                        <div class="user_img"><img class="img-responsive" src="/assets/images/logo/car_log.jpg" alt="#" width="500px" /></div>
                         <div class="user_info">
                            <h6>Motor Zone</h6>
                            <p><span class="online_animation"></span> Online</p>
@@ -54,7 +54,7 @@
                         </ul>
                      </li>
                      <li class="active">
-                        <a href="#customer_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Car Reapir Machanist</span></a>
+                        <a href="#customer_page" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-clone yellow_color"></i> <span>Car Reapir Customer List</span></a>
                         <ul class="collapse list-unstyled" id="customer_page">
                            <li>
                               <a href="/customer">> <span>Customer List</span></a>

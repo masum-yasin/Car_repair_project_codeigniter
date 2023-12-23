@@ -14,7 +14,7 @@ class SignupController extends BaseController
     public function index()
     {
         $data = [];
-        return view('signup_form',$data);
+        return view('/signup_form',$data);
     }
    public function store(){
     $rules = [

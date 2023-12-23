@@ -45,6 +45,7 @@
                         <img width="210" src="assets/images/logo/logo.png" alt="#" />
                      </div>
                   </div>
+                
                   <div class="login_form">
                      <form method="post" action="<?php echo site_url('/signup/store') ?>">
                         <fieldset>

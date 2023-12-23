@@ -210,7 +210,7 @@
                                                         </div>
                                                         <div class="field margin_0">
                                                             <label class="label_field hidden">hidden label</label>
-                                                            <button class="btn btn-success w-100" type="submit">SUBMIT</button>
+                                                            <button class="btn btn-success w-100" type="submit">UPDATE</button>
                                                         </div>
                                                     </fieldset>
                                                 </form>

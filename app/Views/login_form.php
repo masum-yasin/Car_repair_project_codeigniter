@@ -45,6 +45,12 @@
                         <img width="210" src="assets/images/logo/logo.png" alt="#" />
                      </div>
                   </div>
+                  <?php if (session()->getFlashdata('msg')) : ?>
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    <?php echo session()->getFlashdata('msg'); ?>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                </div>
+                            <?php endif; ?>
                   <div class="login_form">
                      <form method="post" action="<?php echo site_url('/loginuser') ?>">
                         <fieldset>

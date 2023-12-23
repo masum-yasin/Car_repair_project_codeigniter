@@ -26,7 +26,7 @@ $routes->post('/mechanist/update/(:num)','MechanistController::update/$1');
 
 
 // Login Authencation System signup and login//
-$routes->get('signup','SignupController::index');
+$routes->get('/signup','SignupController::index');
 $routes->match(['get','post'] ,'signup/store', 'SignupController::store');
 $routes->get('/login','LoginController::index');
 $routes->post('/loginuser', 'LoginController::login');

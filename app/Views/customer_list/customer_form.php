@@ -36,13 +36,18 @@
       <![endif]-->
    </head>
    <body class="inner_page login">
+   <?php echo $this->include('includes/sidebar.php'); ?>
       <div class="full_container" style="margin-top:150px;">
          <div class="container">
+         <?php echo $this->include('includes/topbar.php'); ?>
+
+      
+
             <div class="center verticle_center full_height">
                <div class="login_section">
                   <div class="logo_login">
                      <div class="center">
-                        <img width="210" src="assets/images/logo/logo.png" alt="#" />
+                        <img width="210" src="../assets/images/logo/pexels-cottonbro-studio-4489718.jpg" alt="#" />
                      </div>
                   </div>
                   <?php if (session()->getFlashdata('msg')) : ?>
