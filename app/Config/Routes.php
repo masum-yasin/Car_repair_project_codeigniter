@@ -36,7 +36,7 @@ $routes->get('/signout', 'LoginController::logout');
 
 // Frontend Data Show//
 $routes->get('serviceall', 'Frontend\ServiceController::index');
-$routes->post('service/(:num)', 'Frontend\ServiceController::show/$1');
+$routes->get('service/(:num)', 'Frontend\ServiceController::show/$1');
 // Customer routes Start//
 $routes->get('/customer','CustomerController::index');
 $routes->get('/customer/create','CustomerController::create');
