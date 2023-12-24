@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2023 at 08:06 PM
+-- Generation Time: Dec 24, 2023 at 08:39 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.4.33
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `car_repair`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `booking_tb`
+--
+
+CREATE TABLE `booking_tb` (
+  `id` int(11) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `mobile` varchar(50) NOT NULL,
+  `service_name` varchar(50) NOT NULL,
+  `price` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `booking_tb`
+--
+
+INSERT INTO `booking_tb` (`id`, `user_name`, `mobile`, `service_name`, `price`) VALUES
+(1, '', '1546', 'Foam Washing', '123654'),
+(2, 'abc', '147', 'Foam Washing', '123654');
 
 -- --------------------------------------------------------
 
@@ -66,9 +88,15 @@ CREATE TABLE `customers` (
 --
 
 INSERT INTO `customers` (`id`, `name`, `email`, `phone_Number`, `address`, `state`, `created_at`, `details`) VALUES
-(1, 'khayrul  mizan', 'rayan@gmail.com', 0, NULL, 'Dhaka', '0000-00-00 00:00:00', NULL),
+(1, 'khayrul Alam Rayan', 'rayan@gmail.com', 0, '', 'Dhaka', '2023-12-27 08:36:07', 'Pellentesque bibendum nunc eget pharetra posuere. Sed fermentum eros at aliquet accumsan. Nullam ut leo massa. Mauris est odio, elementum eu accumsan nec, cursus quis nunc.'),
 (2, 'khayrul Alam Rayan', 'rayan@gmail.com', 12365874, NULL, 'ssjkpojs;', '2024-01-02 18:00:00', NULL),
-(3, 'khayrul Alam Rayan', 'abc@gmail.com', 2147483647, NULL, 'dddddddddddd', '0000-00-00 00:00:00', NULL);
+(3, 'khayrul Alam Rayan', 'abc@gmail.com', 1963202587, NULL, 'dddddddddddd', '2023-12-20 18:00:00', NULL),
+(4, 'khayrul Alam Rayan', 'rayan@gmail.com', 215478, NULL, 'dddddd', '2023-12-20 18:00:00', NULL),
+(5, 'khayrul Alam Rayan', 'rayan@gmail.com', 920362514, NULL, 'dhaka', '2023-12-22 18:00:00', NULL),
+(6, 'khayrul Alam Rayan', 'rayan@gmail.com', 2147483647, 'jtbvgyhunjim', 'dddddddddddd', '2023-12-23 10:30:14', 'jsjwsojwfpsd;iuowjsps;sjpuisjpeui'),
+(8, 'khayrul Alam Rayan', 'rayan@gmail.com', 153862653, 'Khulna, madar bari', 'Khulna', '2023-12-24 03:13:10', 'karim mia kichu bolo mia'),
+(9, 'Kamrul Hasan', 'hasan@gmail.com', 1920362514, NULL, 'Khulna', '0000-00-00 00:00:00', NULL),
+(10, 'Trisha', 'trisha@gmail.com', 1920362541, 'Comilla,kutbari', 'Comilla', '2023-12-24 06:22:26', 'Engine Service');
 
 -- --------------------------------------------------------
 
@@ -93,7 +121,8 @@ CREATE TABLE `mechanics_list` (
 INSERT INTO `mechanics_list` (`id`, `name`, `contact`, `email`, `status`, `Joining_Date`, `image`) VALUES
 (1, '', '09123456789', 'jsmith@sample.com', 1, '2021-09-30 10:26:11', ''),
 (6, 'Rayan Alam', '0192036251', 'mamun@gmail.com', 1, '2023-12-20 15:12:03', 'msg4.png'),
-(7, 'Kutta Sadid', '01236925145', 'fgk@gmail.com', 1, '2023-12-20 16:08:25', 'g2.jpg');
+(7, 'nosto Sadid', '01236925145', 'fgk@gmail.com', 1, '2023-12-20 16:08:25', 'g2.jpg'),
+(9, 'Foam Serviceing', '0192036251', 'masum@gmail.com', 1, '2023-12-24 12:17:44', 'msg4.png');
 
 -- --------------------------------------------------------
 
@@ -142,11 +171,14 @@ CREATE TABLE `service_list` (
 --
 
 INSERT INTO `service_list` (`id`, `service`, `description`, `price`, `status`, `date_created`, `image`) VALUES
-(36, 'Foam Washing', 'It a carefully washing ', 123654, 1, '2023-12-19 00:00:00', '1702977401_3c457edc95eb5be99203.png'),
-(37, 'Foam Washing', 'It a carefully washing ', 4582, 1, '2023-12-19 00:00:00', '1702978980_34a60adb3d421e656a76.jpg'),
-(38, 'Foam Washing', 'It a carefully washing ', 123654, 1, '2023-12-30 00:00:00', 'g8.jpg'),
-(39, 'Foam Washing', 'It a carefully washing ', 123654, 1, '2023-12-20 00:00:00', 'g3.jpg'),
-(40, 'Engine Repair', 'It a carefully washing ', 123654, 1, '2023-12-21 00:00:00', 'user_img.jpg');
+(36, 'Tiers Replacement', 'f you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time', 123654, 1, '2023-12-19 00:00:00', '1702977401_3c457edc95eb5be99203.png'),
+(37, 'Oil Changing', 'f you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time', 4582, 1, '2023-12-19 00:00:00', '1702978980_34a60adb3d421e656a76.jpg'),
+(38, 'Foam Washing', 'f you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time', 123654, 1, '2023-12-30 00:00:00', 'g8.jpg'),
+(39, 'Engine repair', 'f you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time', 123654, 1, '2023-12-20 00:00:00', 'g3.jpg'),
+(40, 'Engine Repair', 'f you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time', 123654, 1, '2023-12-21 00:00:00', 'user_img.jpg'),
+(41, 'Replace wiper', 'If you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time,', 25000, 1, '2023-12-20 09:40:27', 'g3.jpg'),
+(42, 'Transmission fluid', 'If you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time,', 25000, 1, '2023-12-24 09:45:26', 'g3.jpg'),
+(43, 'Engine Oil', 'If you’re experiencing any tire problems, our experienced Firestone Tire and Auto Service Professionals will perform a free tire check to assess correct tire pressure, tire tread depth, tread wear and balance of your tires, as well as checking for any tire punctures that could cause a flat.\r\n\r\nAll of our tire repair services are backed with a Firestone guarantee: your tires will be fixed right the first time,', 30000, 1, '2023-12-24 09:46:28', 'g3.jpg');
 
 -- --------------------------------------------------------
 
@@ -216,11 +248,19 @@ INSERT INTO `users` (`us_id`, `name`, `email`, `password`, `created_at`) VALUES
 (1, 'khayrul Alam Rayan', 'rayan@gmail.com ', '123456', '2023-12-15 11:00:06'),
 (2, 'masum', 'masum55549@gmail.com', '$2y$10$tF0lMNa3CDqOhzGi7TufFOiUuPO9oSz.NLyjv9AcPa9', '2023-12-20 12:18:09'),
 (3, 'rayan', 'rayan@gmail.com', '$2y$10$BGqtHSg4tcvZxd/sBQb2wOIDuT/XGr0Y/xtEJd/t04r', '2023-12-21 04:43:23'),
-(4, 'mamun', 'mamun@gmail.com', '$2y$10$Pk1EJ7ETj8uGcREIjmAWaemjGG/6n4VGaudMviCZqVWDzfIJBj5Z.', '2023-12-21 06:00:45');
+(4, 'mamun', 'mamun@gmail.com', '$2y$10$Pk1EJ7ETj8uGcREIjmAWaemjGG/6n4VGaudMviCZqVWDzfIJBj5Z.', '2023-12-21 06:00:45'),
+(5, 'masum', 'rayan@gmail.com', '$2y$10$0k8CSx64r/JGGZrgxcA0CeVQxlyjtc8zO4tJkyRkVQ9WlSNrQ2TXq', '2023-12-23 12:42:30'),
+(6, 'ikbal', 'ikbal@gmail.com', '$2y$10$GojHIg4CN88UIzPcm19TxOu499.Yo3t8tqeDDhqU3Zw1WuTLTtcmq', '2023-12-24 03:07:09');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `booking_tb`
+--
+ALTER TABLE `booking_tb`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `categories`
@@ -275,6 +315,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `booking_tb`
+--
+ALTER TABLE `booking_tb`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
@@ -284,19 +330,19 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `customers`
 --
 ALTER TABLE `customers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `mechanics_list`
 --
 ALTER TABLE `mechanics_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `service_list`
 --
 ALTER TABLE `service_list`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `service_requests`
@@ -314,7 +360,7 @@ ALTER TABLE `system_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `us_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `us_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
